@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Ulang Tahun!</h1>
+        <p>Semoga harimu menyenangkan!</p>
+        <button id="surpriseBtn">Klik untuk kejutan</button>
+        <div id="surprise" class="hidden">
+            <img src="./img/kue.png" alt="Kue Ulang Tahun">
+            <p>Selamat Ulang Tahun upikk! 🎉</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("surpriseBtn").addEventListener("click", function() {
+            const surprise = document.getElementById("surprise");
+            surprise.classList.toggle("visible");
+        });
+    </script>
+</body>
+</html>
